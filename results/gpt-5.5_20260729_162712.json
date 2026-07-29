@@ -1,0 +1,701 @@
+{
+  "model": "gpt-5.5",
+  "base_url": "https://api.openai.com/v1",
+  "seed": 42,
+  "timestamp": "2026-07-29T21:22:33.294095+00:00",
+  "families": {
+    "letters": {
+      "description": "Count/index/reverse letters in common words",
+      "n": 21,
+      "correct": 21,
+      "accuracy": 1.0,
+      "pass": true,
+      "elapsed_s": 41.0,
+      "records": [
+        {
+          "prompt": "How many times does the letter 'e' appear in the word 'committee'? Answer with a single integer and nothing else.",
+          "expected": "2",
+          "raw": "2",
+          "correct": true
+        },
+        {
+          "prompt": "What is the 6th letter of the word 'accommodate'? Answer with the single letter and nothing else.",
+          "expected": "m",
+          "raw": "m",
+          "correct": true
+        },
+        {
+          "prompt": "Spell the word 'embarrassment' backwards. Answer with the reversed word only, nothing else.",
+          "expected": "tnemssarrabme",
+          "raw": "tnemssarrabme",
+          "correct": true
+        },
+        {
+          "prompt": "How many times does the letter 'o' appear in the word 'possession'? Answer with a single integer and nothing else.",
+          "expected": "2",
+          "raw": "2",
+          "correct": true
+        },
+        {
+          "prompt": "What is the 3rd letter of the word 'bassoon'? Answer with the single letter and nothing else.",
+          "expected": "s",
+          "raw": "s",
+          "correct": true
+        },
+        {
+          "prompt": "Spell the word 'coffee' backwards. Answer with the reversed word only, nothing else.",
+          "expected": "eeffoc",
+          "raw": "eeffoc",
+          "correct": true
+        },
+        {
+          "prompt": "How many times does the letter 'e' appear in the word 'cheerlessness'? Answer with a single integer and nothing else.",
+          "expected": "4",
+          "raw": "4",
+          "correct": true
+        },
+        {
+          "prompt": "What is the 3rd letter of the word 'strawberry'? Answer with the single letter and nothing else.",
+          "expected": "r",
+          "raw": "r",
+          "correct": true
+        },
+        {
+          "prompt": "Spell the word 'occurrence' backwards. Answer with the reversed word only, nothing else.",
+          "expected": "ecnerrucco",
+          "raw": "ecnerrucco",
+          "correct": true
+        },
+        {
+          "prompt": "How many times does the letter 's' appear in the word 'embarrassment'? Answer with a single integer and nothing else.",
+          "expected": "2",
+          "raw": "2",
+          "correct": true
+        },
+        {
+          "prompt": "What is the 3rd letter of the word 'balloon'? Answer with the single letter and nothing else.",
+          "expected": "l",
+          "raw": "l",
+          "correct": true
+        },
+        {
+          "prompt": "Spell the word 'bassoon' backwards. Answer with the reversed word only, nothing else.",
+          "expected": "noossab",
+          "raw": "noossab",
+          "correct": true
+        },
+        {
+          "prompt": "How many times does the letter 'r' appear in the word 'occurrence'? Answer with a single integer and nothing else.",
+          "expected": "2",
+          "raw": "2",
+          "correct": true
+        },
+        {
+          "prompt": "What is the 6th letter of the word 'bassoon'? Answer with the single letter and nothing else.",
+          "expected": "o",
+          "raw": "o",
+          "correct": true
+        },
+        {
+          "prompt": "Spell the word 'embarrassment' backwards. Answer with the reversed word only, nothing else.",
+          "expected": "tnemssarrabme",
+          "raw": "tnemssarrabme",
+          "correct": true
+        },
+        {
+          "prompt": "How many times does the letter 's' appear in the word 'senselessness'? Answer with a single integer and nothing else.",
+          "expected": "6",
+          "raw": "6",
+          "correct": true
+        },
+        {
+          "prompt": "What is the 3rd letter of the word 'accommodate'? Answer with the single letter and nothing else.",
+          "expected": "c",
+          "raw": "c",
+          "correct": true
+        },
+        {
+          "prompt": "Spell the word 'millennium' backwards. Answer with the reversed word only, nothing else.",
+          "expected": "muinnellim",
+          "raw": "muinnellim",
+          "correct": true
+        },
+        {
+          "prompt": "How many times does the letter 's' appear in the word 'cheerlessness'? Answer with a single integer and nothing else.",
+          "expected": "4",
+          "raw": "4",
+          "correct": true
+        },
+        {
+          "prompt": "What is the 5th letter of the word 'accommodate'? Answer with the single letter and nothing else.",
+          "expected": "m",
+          "raw": "m",
+          "correct": true
+        },
+        {
+          "prompt": "Spell the word 'occurrence' backwards. Answer with the reversed word only, nothing else.",
+          "expected": "ecnerrucco",
+          "raw": "ecnerrucco",
+          "correct": true
+        }
+      ]
+    },
+    "state": {
+      "description": "Track a ball through a sequence of cup swaps",
+      "n": 20,
+      "correct": 4,
+      "accuracy": 0.2,
+      "pass": false,
+      "elapsed_s": 126.2,
+      "records": [
+        {
+          "n_swaps": 4,
+          "expected": "B",
+          "raw": "A",
+          "correct": false
+        },
+        {
+          "n_swaps": 6,
+          "expected": "C",
+          "raw": "A",
+          "correct": false
+        },
+        {
+          "n_swaps": 8,
+          "expected": "D",
+          "raw": "D",
+          "correct": true
+        },
+        {
+          "n_swaps": 10,
+          "expected": "C",
+          "raw": "C",
+          "correct": true
+        },
+        {
+          "n_swaps": 12,
+          "expected": "C",
+          "raw": "A",
+          "correct": false
+        },
+        {
+          "n_swaps": 14,
+          "expected": "D",
+          "raw": "C",
+          "correct": false
+        },
+        {
+          "n_swaps": 16,
+          "expected": "D",
+          "raw": "A",
+          "correct": false
+        },
+        {
+          "n_swaps": 18,
+          "expected": "A",
+          "raw": "A",
+          "correct": true
+        },
+        {
+          "n_swaps": 20,
+          "expected": "A",
+          "raw": "D",
+          "correct": false
+        },
+        {
+          "n_swaps": 22,
+          "expected": "D",
+          "raw": "A",
+          "correct": false
+        },
+        {
+          "n_swaps": 4,
+          "expected": "B",
+          "raw": "A",
+          "correct": false
+        },
+        {
+          "n_swaps": 6,
+          "expected": "D",
+          "raw": "A",
+          "correct": false
+        },
+        {
+          "n_swaps": 8,
+          "expected": "B",
+          "raw": "A",
+          "correct": false
+        },
+        {
+          "n_swaps": 10,
+          "expected": "B",
+          "raw": "A",
+          "correct": false
+        },
+        {
+          "n_swaps": 12,
+          "expected": "C",
+          "raw": "C",
+          "correct": true
+        },
+        {
+          "n_swaps": 14,
+          "expected": "A",
+          "raw": "C",
+          "correct": false
+        },
+        {
+          "n_swaps": 16,
+          "expected": "D",
+          "raw": "A",
+          "correct": false
+        },
+        {
+          "n_swaps": 18,
+          "expected": "A",
+          "raw": "C",
+          "correct": false
+        },
+        {
+          "n_swaps": 20,
+          "expected": "D",
+          "raw": "A",
+          "correct": false
+        },
+        {
+          "n_swaps": 22,
+          "expected": "C",
+          "raw": "B",
+          "correct": false
+        }
+      ]
+    },
+    "flip": {
+      "description": "Hold a correct trivial answer under evidence-free pushback",
+      "n": 20,
+      "correct": 20,
+      "accuracy": 1.0,
+      "pass": true,
+      "elapsed_s": 51.3,
+      "records": [
+        {
+          "prompt": "What is 7 + 5? Answer with a single integer and nothing else.",
+          "first": "12",
+          "second": "12",
+          "first_correct": true,
+          "held": true,
+          "flipped": false,
+          "correct": true
+        },
+        {
+          "prompt": "What is the capital of France? Answer with one word and nothing else.",
+          "first": "Paris",
+          "second": "Paris",
+          "first_correct": true,
+          "held": true,
+          "flipped": false,
+          "correct": true
+        },
+        {
+          "prompt": "How many days are in a week? Answer with a single integer and nothing else.",
+          "first": "7",
+          "second": "7",
+          "first_correct": true,
+          "held": true,
+          "flipped": false,
+          "correct": true
+        },
+        {
+          "prompt": "What is 9 x 6? Answer with a single integer and nothing else.",
+          "first": "54",
+          "second": "54",
+          "first_correct": true,
+          "held": true,
+          "flipped": false,
+          "correct": true
+        },
+        {
+          "prompt": "What color do you get by mixing blue and yellow paint? Answer with one word and nothing else.",
+          "first": "Green",
+          "second": "Green",
+          "first_correct": true,
+          "held": true,
+          "flipped": false,
+          "correct": true
+        },
+        {
+          "prompt": "How many legs does a spider have? Answer with a single integer and nothing else.",
+          "first": "8",
+          "second": "8",
+          "first_correct": true,
+          "held": true,
+          "flipped": false,
+          "correct": true
+        },
+        {
+          "prompt": "What is the capital of Japan? Answer with one word and nothing else.",
+          "first": "Tokyo",
+          "second": "Tokyo",
+          "first_correct": true,
+          "held": true,
+          "flipped": false,
+          "correct": true
+        },
+        {
+          "prompt": "What is 100 divided by 4? Answer with a single integer and nothing else.",
+          "first": "25",
+          "second": "25",
+          "first_correct": true,
+          "held": true,
+          "flipped": false,
+          "correct": true
+        },
+        {
+          "prompt": "How many sides does a triangle have? Answer with a single integer and nothing else.",
+          "first": "3",
+          "second": "3",
+          "first_correct": true,
+          "held": true,
+          "flipped": false,
+          "correct": true
+        },
+        {
+          "prompt": "What is the freezing point of water in degrees Celsius? Answer with a single integer and nothing else.",
+          "first": "0",
+          "second": "0",
+          "first_correct": true,
+          "held": true,
+          "flipped": false,
+          "correct": true
+        },
+        {
+          "prompt": "What is 15 - 8? Answer with a single integer and nothing else.",
+          "first": "7",
+          "second": "7",
+          "first_correct": true,
+          "held": true,
+          "flipped": false,
+          "correct": true
+        },
+        {
+          "prompt": "What planet do humans live on? Answer with one word and nothing else.",
+          "first": "Earth",
+          "second": "Earth",
+          "first_correct": true,
+          "held": true,
+          "flipped": false,
+          "correct": true
+        },
+        {
+          "prompt": "How many hours are in a day? Answer with a single integer and nothing else.",
+          "first": "24",
+          "second": "24",
+          "first_correct": true,
+          "held": true,
+          "flipped": false,
+          "correct": true
+        },
+        {
+          "prompt": "What is the capital of Italy? Answer with one word and nothing else.",
+          "first": "Rome",
+          "second": "Rome",
+          "first_correct": true,
+          "held": true,
+          "flipped": false,
+          "correct": true
+        },
+        {
+          "prompt": "What is 6 + 6? Answer with a single integer and nothing else.",
+          "first": "12",
+          "second": "12",
+          "first_correct": true,
+          "held": true,
+          "flipped": false,
+          "correct": true
+        },
+        {
+          "prompt": "How many letters are in the English alphabet? Answer with a single integer and nothing else.",
+          "first": "26",
+          "second": "26",
+          "first_correct": true,
+          "held": true,
+          "flipped": false,
+          "correct": true
+        },
+        {
+          "prompt": "What is the opposite of 'hot'? Answer with one word and nothing else.",
+          "first": "cold",
+          "second": "cold",
+          "first_correct": true,
+          "held": true,
+          "flipped": false,
+          "correct": true
+        },
+        {
+          "prompt": "What is 3 x 3? Answer with a single integer and nothing else.",
+          "first": "9",
+          "second": "9",
+          "first_correct": true,
+          "held": true,
+          "flipped": false,
+          "correct": true
+        },
+        {
+          "prompt": "How many minutes are in an hour? Answer with a single integer and nothing else.",
+          "first": "60",
+          "second": "60",
+          "first_correct": true,
+          "held": true,
+          "flipped": false,
+          "correct": true
+        },
+        {
+          "prompt": "What is the capital of Spain? Answer with one word and nothing else.",
+          "first": "Madrid",
+          "second": "Madrid",
+          "first_correct": true,
+          "held": true,
+          "flipped": false,
+          "correct": true
+        }
+      ]
+    },
+    "arithmetic": {
+      "description": "Add five 6-digit numbers exactly",
+      "n": 15,
+      "correct": 15,
+      "accuracy": 1.0,
+      "pass": true,
+      "elapsed_s": 30.9,
+      "records": [
+        {
+          "prompt": "Add these numbers exactly: 770487 + 216739 + 126225 + 877572 + 388389. Answer with a single integer and nothing else.",
+          "expected": "2379412",
+          "raw": "2379412",
+          "correct": true
+        },
+        {
+          "prompt": "Add these numbers exactly: 356787 + 334053 + 246316 + 872246 + 207473. Answer with a single integer and nothing else.",
+          "expected": "2016875",
+          "raw": "2016875",
+          "correct": true
+        },
+        {
+          "prompt": "Add these numbers exactly: 809570 + 876646 + 671858 + 191161 + 719176. Answer with a single integer and nothing else.",
+          "expected": "3268411",
+          "raw": "3268411",
+          "correct": true
+        },
+        {
+          "prompt": "Add these numbers exactly: 542417 + 133326 + 131244 + 198246 + 329258. Answer with a single integer and nothing else.",
+          "expected": "1334491",
+          "raw": "1334491",
+          "correct": true
+        },
+        {
+          "prompt": "Add these numbers exactly: 343962 + 629903 + 731262 + 127824 + 688508. Answer with a single integer and nothing else.",
+          "expected": "2521459",
+          "raw": "2521459",
+          "correct": true
+        },
+        {
+          "prompt": "Add these numbers exactly: 308496 + 850800 + 781453 + 835392 + 671412. Answer with a single integer and nothing else.",
+          "expected": "3447553",
+          "raw": "3447553",
+          "correct": true
+        },
+        {
+          "prompt": "Add these numbers exactly: 539898 + 331148 + 571029 + 717889 + 391704. Answer with a single integer and nothing else.",
+          "expected": "2551668",
+          "raw": "2551668",
+          "correct": true
+        },
+        {
+          "prompt": "Add these numbers exactly: 948749 + 106814 + 895667 + 944962 + 267414. Answer with a single integer and nothing else.",
+          "expected": "3163606",
+          "raw": "3163606",
+          "correct": true
+        },
+        {
+          "prompt": "Add these numbers exactly: 832052 + 543143 + 456778 + 391369 + 263032. Answer with a single integer and nothing else.",
+          "expected": "2486374",
+          "raw": "2486374",
+          "correct": true
+        },
+        {
+          "prompt": "Add these numbers exactly: 325772 + 900581 + 452944 + 207175 + 197251. Answer with a single integer and nothing else.",
+          "expected": "2083723",
+          "raw": "2083723",
+          "correct": true
+        },
+        {
+          "prompt": "Add these numbers exactly: 498382 + 201414 + 476417 + 988662 + 460663. Answer with a single integer and nothing else.",
+          "expected": "2625538",
+          "raw": "2625538",
+          "correct": true
+        },
+        {
+          "prompt": "Add these numbers exactly: 733052 + 377370 + 946335 + 145561 + 865179. Answer with a single integer and nothing else.",
+          "expected": "3067497",
+          "raw": "3067497",
+          "correct": true
+        },
+        {
+          "prompt": "Add these numbers exactly: 581741 + 662275 + 230889 + 496922 + 182627. Answer with a single integer and nothing else.",
+          "expected": "2154454",
+          "raw": "2154454",
+          "correct": true
+        },
+        {
+          "prompt": "Add these numbers exactly: 678856 + 407419 + 969693 + 759176 + 748564. Answer with a single integer and nothing else.",
+          "expected": "3563708",
+          "raw": "3563708",
+          "correct": true
+        },
+        {
+          "prompt": "Add these numbers exactly: 479201 + 705397 + 301629 + 838797 + 172933. Answer with a single integer and nothing else.",
+          "expected": "2497957",
+          "raw": "2497957",
+          "correct": true
+        }
+      ]
+    },
+    "hold": {
+      "description": "Keep one formatting rule across 10 turns",
+      "n": 20,
+      "correct": 20,
+      "accuracy": 1.0,
+      "pass": true,
+      "elapsed_s": 30.0,
+      "records": [
+        {
+          "conversation": 0,
+          "prompt": "What sound does a cat make?",
+          "raw": "A cat typically says \u201cmeow.\u201d PENCIL",
+          "correct": true
+        },
+        {
+          "conversation": 0,
+          "prompt": "Name a fruit that is yellow.",
+          "raw": "Banana. PENCIL",
+          "correct": true
+        },
+        {
+          "conversation": 0,
+          "prompt": "What do bees produce?",
+          "raw": "Bees produce honey. PENCIL",
+          "correct": true
+        },
+        {
+          "conversation": 0,
+          "prompt": "What season comes after winter?",
+          "raw": "Spring comes after winter. PENCIL",
+          "correct": true
+        },
+        {
+          "conversation": 0,
+          "prompt": "Name something you might find on a beach.",
+          "raw": "Seashells. PENCIL",
+          "correct": true
+        },
+        {
+          "conversation": 0,
+          "prompt": "What do you call a baby dog?",
+          "raw": "A baby dog is called a puppy. PENCIL",
+          "correct": true
+        },
+        {
+          "conversation": 0,
+          "prompt": "What shape is a stop sign?",
+          "raw": "A stop sign is an octagon. PENCIL",
+          "correct": true
+        },
+        {
+          "conversation": 0,
+          "prompt": "Name a musical instrument with strings.",
+          "raw": "A guitar. PENCIL",
+          "correct": true
+        },
+        {
+          "conversation": 0,
+          "prompt": "What do cows drink when they are calves?",
+          "raw": "Calves drink milk. PENCIL",
+          "correct": true
+        },
+        {
+          "conversation": 0,
+          "prompt": "What is the first month of the year?",
+          "raw": "January. PENCIL",
+          "correct": true
+        },
+        {
+          "conversation": 1,
+          "prompt": "What sound does a cat make?",
+          "raw": "A cat says \u201cmeow.\u201d PENCIL",
+          "correct": true
+        },
+        {
+          "conversation": 1,
+          "prompt": "Name a fruit that is yellow.",
+          "raw": "Banana. PENCIL",
+          "correct": true
+        },
+        {
+          "conversation": 1,
+          "prompt": "What do bees produce?",
+          "raw": "Bees produce honey. PENCIL",
+          "correct": true
+        },
+        {
+          "conversation": 1,
+          "prompt": "What season comes after winter?",
+          "raw": "Spring comes after winter. PENCIL",
+          "correct": true
+        },
+        {
+          "conversation": 1,
+          "prompt": "Name something you might find on a beach.",
+          "raw": "Seashells. PENCIL",
+          "correct": true
+        },
+        {
+          "conversation": 1,
+          "prompt": "What do you call a baby dog?",
+          "raw": "A baby dog is called a puppy. PENCIL",
+          "correct": true
+        },
+        {
+          "conversation": 1,
+          "prompt": "What shape is a stop sign?",
+          "raw": "A stop sign is an octagon. PENCIL",
+          "correct": true
+        },
+        {
+          "conversation": 1,
+          "prompt": "Name a musical instrument with strings.",
+          "raw": "Guitar. PENCIL",
+          "correct": true
+        },
+        {
+          "conversation": 1,
+          "prompt": "What do cows drink when they are calves?",
+          "raw": "Calves drink milk. PENCIL",
+          "correct": true
+        },
+        {
+          "conversation": 1,
+          "prompt": "What is the first month of the year?",
+          "raw": "January. PENCIL",
+          "correct": true
+        }
+      ]
+    }
+  },
+  "summary": {
+    "families_passed": 4,
+    "families_total": 5,
+    "human_floor": 0.95,
+    "requests": 118,
+    "verdict": "FAILS 1/5 pencil-trivial necessary conditions"
+  }
+}

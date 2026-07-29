@@ -24,6 +24,37 @@ proves very little. **Failing them proves a lot.**
 The pass threshold is **95% per family** — a generous floor for tasks where
 adult humans score essentially 100%.
 
+## Results so far (2026-07-29, full transcripts in `results/`)
+
+| Model | letters | state | flip | arithmetic | hold | Verdict |
+|---|---|---|---|---|---|---|
+| gpt-4o | 81% | 35% | 100% | 20% | 100% | **FAILS 3/5** |
+| gpt-5.6-sol | 90% | 90% | 100% | 100% | 100% | **FAILS 2/5** |
+| gpt-5.5 | 100% | 100% | 100% | 100% | 100% | **PASSES 5/5** ✓ |
+
+Three things worth noticing:
+
+1. **The model most people mean by "ChatGPT" fails three of five.** gpt-4o
+   aces the two social families (holding an answer under pushback, keeping a
+   politeness-adjacent formatting rule) and fails the three that require
+   maintaining internal state: reading letters, tracking a ball, exact
+   addition. Performance without stable competence.
+2. **Capability is not monotonic.** gpt-5.6-sol is a newer preview than
+   gpt-5.5 and scores worse — narrowly missing two families the older
+   flagship passes.
+3. **gpt-5.5 passes — and we report it.** That is the falsifiability clause
+   working as designed. Passing means the necessary conditions tested here
+   are met; it does not mean AGI has arrived. It took the flagship
+   reasoning tier, spending hidden chain-of-thought tokens on every cup
+   swap, to clear a bar a third-grader clears with a pencil stub.
+
+*Housekeeping note:* the first published `state` family had ambiguous cup
+semantics — frontier models parsed the wording correctly and were wrongly
+graded as failures. The transcripts caught it, the family was rewritten
+(see git history), and all three models were re-run. The pre-fix runs
+remain in `results/` because deleting inconvenient data is exactly what
+this repo is against.
+
 ## Run it
 
 Stdlib-only Python 3.10+. No dependencies. Works against any
@@ -68,23 +99,29 @@ on 7+5 under mild social pressure" is precisely the shape of the problem:
 performance without stable competence.
 
 **"Model X passes now."**
-Great — that's the design. This test is falsifiable and this README will
-be updated with any verified passing run. Passing all five families means
-exactly what it says: the necessary conditions tested here are met. It
-does not mean AGI has arrived; necessary ≠ sufficient.
+Great — that's the design. This test is falsifiable and this README is
+updated with verified passing runs (gpt-5.5 passed on 2026-07-29; see the
+results table above). Passing all five families means exactly what it
+says: the necessary conditions tested here are met. It does not mean AGI
+has arrived; necessary ≠ sufficient.
 
 ## What a run looks like
 
 ```
-The Pencil Test — <model>
+The Pencil Test — gpt-4o
 ============================================================
   running letters     (Count/index/reverse letters in common words) ...
-    -> 13/21  (62%)  FAIL
+    -> 17/21  (81%)  FAIL
   running state       (Track a ball through a sequence of cup swaps) ...
-    -> 14/20  (70%)  FAIL
-  ...
+    -> 7/20  (35%)  FAIL
+  running flip        (Hold a correct trivial answer under evidence-free pushback) ...
+    -> 20/20  (100%)  PASS
+  running arithmetic  (Add five 6-digit numbers exactly) ...
+    -> 3/15  (20%)  FAIL
+  running hold        (Keep one formatting rule across 10 turns) ...
+    -> 20/20  (100%)  PASS
 ============================================================
-  Verdict: <model> FAILS 4/5 pencil-trivial necessary conditions
+  Verdict: gpt-4o FAILS 3/5 pencil-trivial necessary conditions
   (human floor = 95% per family; adults with a pencil score ~100%)
 ```
 

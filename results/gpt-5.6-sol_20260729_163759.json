@@ -1,0 +1,165 @@
+{
+  "model": "gpt-5.6-sol",
+  "base_url": "https://api.openai.com/v1",
+  "seed": 42,
+  "timestamp": "2026-07-29T21:37:15.168029+00:00",
+  "families": {
+    "state": {
+      "description": "Track a ball through a sequence of cup swaps",
+      "n": 20,
+      "correct": 18,
+      "accuracy": 0.9,
+      "pass": false,
+      "elapsed_s": 44.0,
+      "records": [
+        {
+          "n_swaps": 4,
+          "start": 1,
+          "expected": "2",
+          "raw": "3",
+          "correct": false
+        },
+        {
+          "n_swaps": 6,
+          "start": 1,
+          "expected": "3",
+          "raw": "3",
+          "correct": true
+        },
+        {
+          "n_swaps": 8,
+          "start": 4,
+          "expected": "4",
+          "raw": "4",
+          "correct": true
+        },
+        {
+          "n_swaps": 10,
+          "start": 3,
+          "expected": "3",
+          "raw": "3",
+          "correct": true
+        },
+        {
+          "n_swaps": 12,
+          "start": 1,
+          "expected": "3",
+          "raw": "3",
+          "correct": true
+        },
+        {
+          "n_swaps": 14,
+          "start": 3,
+          "expected": "4",
+          "raw": "4",
+          "correct": true
+        },
+        {
+          "n_swaps": 16,
+          "start": 1,
+          "expected": "4",
+          "raw": "4",
+          "correct": true
+        },
+        {
+          "n_swaps": 18,
+          "start": 1,
+          "expected": "1",
+          "raw": "1",
+          "correct": true
+        },
+        {
+          "n_swaps": 20,
+          "start": 4,
+          "expected": "1",
+          "raw": "1",
+          "correct": true
+        },
+        {
+          "n_swaps": 22,
+          "start": 1,
+          "expected": "4",
+          "raw": "4",
+          "correct": true
+        },
+        {
+          "n_swaps": 4,
+          "start": 1,
+          "expected": "2",
+          "raw": "4",
+          "correct": false
+        },
+        {
+          "n_swaps": 6,
+          "start": 1,
+          "expected": "4",
+          "raw": "4",
+          "correct": true
+        },
+        {
+          "n_swaps": 8,
+          "start": 1,
+          "expected": "2",
+          "raw": "2",
+          "correct": true
+        },
+        {
+          "n_swaps": 10,
+          "start": 1,
+          "expected": "2",
+          "raw": "2",
+          "correct": true
+        },
+        {
+          "n_swaps": 12,
+          "start": 3,
+          "expected": "3",
+          "raw": "3",
+          "correct": true
+        },
+        {
+          "n_swaps": 14,
+          "start": 3,
+          "expected": "1",
+          "raw": "1",
+          "correct": true
+        },
+        {
+          "n_swaps": 16,
+          "start": 1,
+          "expected": "4",
+          "raw": "4",
+          "correct": true
+        },
+        {
+          "n_swaps": 18,
+          "start": 3,
+          "expected": "1",
+          "raw": "1",
+          "correct": true
+        },
+        {
+          "n_swaps": 20,
+          "start": 1,
+          "expected": "4",
+          "raw": "4",
+          "correct": true
+        },
+        {
+          "n_swaps": 22,
+          "start": 2,
+          "expected": "3",
+          "raw": "3",
+          "correct": true
+        }
+      ]
+    }
+  },
+  "summary": {
+    "families_passed": 0,
+    "families_total": 1,
+    "human_floor": 0.95,
+    "requests": 20,
+    "verdict": "FAILS 1/1 pencil-trivial necessary conditions"
+  }
+}
