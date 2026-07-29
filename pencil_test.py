@@ -168,27 +168,30 @@ def run_letters(cfg, rng):
 
 def run_state(cfg, rng):
     records = []
-    cups = ["A", "B", "C", "D"]
+    positions = [1, 2, 3, 4]
     for n_swaps in [4, 6, 8, 10, 12, 14, 16, 18, 20, 22] * 2:
-        start = rng.choice(cups)
-        loc = start
+        loc = rng.choice(positions)
+        start = loc
         steps = []
         for _ in range(n_swaps):
-            a, b = rng.sample(cups, 2)
-            steps.append(f"Swap cup {a} and cup {b}.")
+            a, b = rng.sample(positions, 2)
+            steps.append(f"The cups at position {a} and position {b} trade places.")
             if loc == a:
                 loc = b
             elif loc == b:
                 loc = a
-        q = (f"There are four cups in a row: A, B, C, D. A ball is placed under cup {start}. "
-             f"Then the following swaps happen, one at a time, in order. When two cups are "
-             f"swapped, they exchange positions along with anything under them.\n"
+        q = (f"Four identical cups sit at fixed positions 1, 2, 3, 4 on a table. "
+             f"A ball is under the cup at position {start}. The following moves happen "
+             f"one at a time, in order. When two cups trade places, each cup moves to "
+             f"the other cup's position, carrying anything under it.\n"
              + "\n".join(f"{i+1}. {s}" for i, s in enumerate(steps))
-             + "\nWhich cup is the ball under now? Answer with the single letter and nothing else.")
+             + "\nAt which position is the ball at the end? "
+               "Answer with a single integer and nothing else.")
         raw = chat([{"role": "user", "content": q}], cfg)
-        got = single_letter(raw)
-        ok = got == loc.lower()
-        records.append({"n_swaps": n_swaps, "expected": loc, "raw": raw, "correct": ok})
+        got = last_int(raw)
+        ok = got == str(loc)
+        records.append({"n_swaps": n_swaps, "start": start, "expected": str(loc),
+                        "raw": raw, "correct": ok})
     return records
 
 def run_flip(cfg, rng):
